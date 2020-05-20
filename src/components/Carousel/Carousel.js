@@ -18,8 +18,8 @@ const CarouselItem = ({ title, copy, image, isActive }) => {
     }, [isActive]);
 
     const imageProps = useSpring(getAnimationConfiguration({
-        from: { transform: 'scale3d(1.1, 1.1, 1.1)', filter: 'blur(0.5em)' },
-        to: { transform: 'scale3d(1, 1, 1)', filter: 'blur(0em)' },
+        from: { transform: 'scale3d(1.1, 1.1, 1.1)' },
+        to: { transform: 'scale3d(1, 1, 1)' },
         config: { ...config.wobbly },
         delay: 200,
         isActive
